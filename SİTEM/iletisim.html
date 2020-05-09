@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+    <title>SİTE1</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+   
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">   
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nvbcollapse">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand"></a>
+        <div class="collapse navbar-collapse" id="nvbcollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index1.html">Anasayfa</a></li>
+            <li class="nav-item"><a class="nav-link" href="hakkımda.html">Hakkımda</a></li>
+            <li class="nav-item"><a class="nav-link" href="özgecmisim.html">Eğitim</a></li>
+            <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+            <li class="nav-item"><a class="nav-link" href="mirasımız.html">Mirasımız</a></li>
+            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletisim</a></li>
+            <li class="nav-item"><a class="nav-link" href="giris.html">Login</a></li>
+         </div>
+        </ul>
+      </div>
+    </nav>
+ 
+
+
+
+<!---iletisim kısmı--->
+<script>
+function validateForm()
+{
+  var x=document.forms["myForm"]["isim"].value;
+  var y=document.forms["myForm"]["soyisim"].value;
+  var z=document.forms["myForm"]["email"].value;
+  var m=document.forms["myForm"]["acıklama"].value;
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; 
+
+  if(x=="")
+  {
+    alert("isim boş bırakılamaz");
+    return false;
+  }
+  if(y=="")
+  {
+    alert("soyisim boş bırakılamaz");
+    return false;
+  }
+
+  if(m=="")
+  {
+    alert("acıklama boş bırakılamaz");
+    return false;
+  }
+  if(reg.test(z) == false)
+  {
+    alert("düzgün bir email adresi giriniz");
+    return false;
+  }
+
+}
+
+
+</script>
+
+
+      <section id="iletisim">
+        <div class="myForm1"> 
+       <p>
+        İletişim Formunu doldurarak bana ulaşabilirsiniz.
+        </p>
+          <div class="row">
+            <div class="col-md-6">
+        <form action="iletisimformukontrol.php" method="POST"  name="myForm" onsubmit="return validateForm()" > 
+          <label >İsim</label>
+          <input type="text" name="isim">
+          <br>
+          <label >Soyisim</label>
+          <input type="text" name="soyisim">
+          <br>
+          <label >Email</label>
+          <input type="text" name="email">
+          <br>
+          <label >Açıklama</label>
+          <textarea type="text" name="acıklama"></textarea>
+          <input class="gonder" id="gonder" type="submit"value="gonder">
+          <input type="reset" value="temizle"></input>
+      
+         </form>
+
+        </div>
+      </div>
+    </div>
+      </section>
+
+
+
+
+ 
+ 
+
+    <!--  -       <div class="container">
+    
+   <form name="myForm" onsubmit="return validateForm()" > 
+    <label >İsim</label>
+    <input type="text" name="isim">
+    <br>
+    <label >Soyisim</label>
+    <input type="text" name="soyisim">
+    <br>
+    <label >Email</label>
+    <input type="text" name="email">
+    <br>
+    <label >Açıklama</label>
+    <textarea type="text" name="acıklama"></textarea>
+    <input class="gonder" id="gonder" type="submit"value="gonder">
+    <input type="reset" value="temizle"></input>
+
+   </form>
+  
+</div>
+->   
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script  src="js/bootstrap.js" ></script>
+  </body>
+</html>

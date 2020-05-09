@@ -1,0 +1,111 @@
+.navbar{
+border-bottom:#6c757d 5px solid;
+
+
+}
+.nav-item .nav-link{
+    color:white !important;
+    text-transform: uppercase;
+
+}
+#headerSection{
+    background: url(../images/resim35.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
+    
+}
+#headerSection .rov{
+
+    height: 100vh;
+}
+.table{
+    color: rgba(255, 255, 255, 0.795);
+    font-size: large;
+    background-size: auto;
+    position: absolute;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+#iletisim .gonder{
+    background-color:rebeccapurple;
+}
+
+
+#hakkımda {
+
+   
+    position: absolute;
+      top: 60px;
+      left: 5px;
+
+
+}
+#sehrim{
+
+    
+    position: absolute;
+    top: 100px;
+    left:55px;
+}
+#özgecmis{
+    background: url(../images/resim14.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
+   
+}
+ p{
+     color: black;
+     font-size: larger;
+ }
+ #hakkımda{
+    background: url(../images/resim21.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
+
+ }
+ #iletisim{
+    background: url(../images/resim20.jpg) center;
+    background-size: cover;
+    height: 100vh;
+   
+ }
+
+#iletisim .myForm1{
+    position: absolute;
+    top: 70px;
+    left:55px;
+    
+
+}
+#mirasımız{
+    background: url(../images/yerebatan.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    
+   
+    
+}
+.mirasımızparagraf{
+    color:wheat;
+    font-size: larger;
+
+}
+#giris{
+    background: url(../images/resim60.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    
+
+}
+.login-box{
+    position: absolute;
+    top: 70px;
+    left:400px;
+    
+
+}
+
+
+
+
